@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <center>
+    <img width="500" height="250" src="D:\vaaga vagitu poga\images\Shop Logo.png"></center>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffbcc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 5px solid #fdd835;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .order-table th, .order-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .order-table th {
+            background-color: #fbc02d;
+            color: white;
+        }
+        .order-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .order-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .button {
+            background-color: #ffeb3b;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #fdd835;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Orders</h1>
+        </div>
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td style="color: red;">Arriving tomorrow</td>
+                    <td>Shipped</td>
+                    <td>$1099</td>
+                    <td><button class="button" onclick="window.location.href='file:///D:/vaaga%20vagitu%20poga/product-detail.html'">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td>2024-12-22</td>
+                    <td>Delivered</td>
+                    <td>$255</td>
+                    <td><button class="button" onclick="window.location.href='file:///D:/vaaga%20vagitu%20poga/product-detail.html'">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td>2024-12-20</td>
+                    <td>Delivered</td>
+                    <td>$598</td>
+                    <td><button class="button" onclick="window.location.href='file:///D:/vaaga%20vagitu%20poga/product-detail.html'">View Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
